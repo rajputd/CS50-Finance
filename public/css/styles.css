@@ -1,0 +1,90 @@
+/**
+ * styles.css
+ *
+ * Computer Science 50
+ * Problem Set 7
+ *
+ * Global CSS.
+ */
+
+.container
+{
+    /* center contents */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#top
+{
+    /* surround with whitespace */
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#top .nav
+{
+    /* center navigation pills */
+    display: inline-block;
+}
+
+#middle .form-control
+{
+    /* center form controls */
+    display: inline-block;
+
+    /* override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+#bottom
+{
+    /* shrink bottom's font size */
+    font-size: smaller;
+
+    /* surround with whitespace */
+    margin: 20px;
+}
+
+table
+{
+    text-align: left;
+}
+
+/* identifies the account link, which has a dropdown menu*/
+#account
+{
+    font-weight: bold;
+}
+
+/*hides dropdown-content*/
+.dropdown-content
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/*formats link inside dropdown menu*/
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/*changes background color of dropdown links to let user know which is being selected*/
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/*displays the dropdown content when account might be selected*/
+#account:hover + .dropdown-content
+{
+    display:block;
+}
+
+/*keeps displaying the dropdown content if mouse leaves #account and goes to menu*/
+.dropdown-content:hover 
+{
+    display:block;
+}
